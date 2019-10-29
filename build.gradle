@@ -9,7 +9,7 @@ node {
 
 //declare a build task
 task build {
-	   println ‘Hello, World! TTM1’
+	   println ‘Hello, World! TTM1!’
 	}
 
 //declare a task to create a zip of the app
@@ -25,7 +25,7 @@ task zip(type: Zip) {
 	}
 	destinationDir(file("dist"))
 	baseName "trainSchedule"
-	println ‘Hello, World! TTM2’
+	println ‘Hello, World! TTM2!’
 }
 
 //declare task dependencies
