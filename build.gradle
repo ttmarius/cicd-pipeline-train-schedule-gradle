@@ -8,9 +8,7 @@ node {
 }
 
 //declare a build task
-task build {
-    println 'Hello, World! This is TTM!'
-}
+task build 
 
 //declare a task to create a zip of the app
 task zip(type: Zip) {
@@ -24,8 +22,7 @@ task zip(type: Zip) {
 		include "views/**"
 	}
 	destinationDir(file("dist"))
-	baseName "trainSchedule"
-	println 'Hello, World! This is zip task test!'
+	baseName "trainSchedule"	
 }
 
 //declare task dependencies
